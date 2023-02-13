@@ -2,7 +2,14 @@ $color-main: #3F51B5;
 $color-accent: #E81919;
 $color-text: #333333;
 
+// レイアウト幅
+$layout-width-canvas: 1280px;
 $layout-width-inner: 1200px;
+
+// 余白
+$padding-pc: 24px;
+$padding-tab: 24px;
+$padding-sp: 16px;
 
 $breakpoints: (
 //キー : 値
@@ -11,10 +18,11 @@ $breakpoints: (
   'pc': "(min-width: #{$layout-width-inner})"
 ) !default;
 
+// メディアクエリー
 @mixin mq($breakpoint: sp) {
-  @media #{map-get($breakpoints, $breakpoint)} {
-    @content;
-  }
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
 }
 
 *,
@@ -59,10 +67,22 @@ h6 {
   padding: 0;
 }
 
+// インナー
 .inner {
-  width: $layout-width-inner;
-  max-width: 100%;
-  margin: 0 auto;
+	width: $layout-width-inner;
+	max-width: 100%;
+	margin: 0 auto;
+	height: inherit;
+
+	@include mq('tab') {
+		padding-left: $padding-tab;
+		padding-right: $padding-tab;
+	}
+
+	@include mq('sp') {
+		padding-left: $padding-sp;
+		padding-right: $padding-sp;
+	}
 }
 
 .section-title {
