@@ -65,6 +65,16 @@ h6 {
   margin: 0 auto;
 }
 
+.section {
+  padding: 100px 0 120px;
+
+  @include mq('sp') {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+
+
 .section-title {
   font-size: 48px;
   font-weight: 700;
@@ -191,12 +201,7 @@ a {
 
 .card {
   background:#EFEFEF;
-  padding: 100px 0 120px;
-
-  @include mq('sp') {
-    padding-top: 50px;
-    padding-bottom: 60px;
-  }
+  
 }
 .card__inner {
 
@@ -276,12 +281,13 @@ a {
 
 /*news*/
 .news {
-  padding: 100px 0 120px;
-  background: #fff;
+  // padding: 100px 0 120px;
+  // background: #fff;
 
-  @include mq('sp') {
-    padding-top: 50px;
-  }
+  // @include mq('sp') {
+  //   padding-top: 50px;
+  //   padding-bottom: 60px;
+  // }
 }
 
 .news__items {
@@ -375,5 +381,63 @@ a {
       height: 11px;
       background: url(../img/news-arrow.svg) no-repeat center center / contain;
     }
+  }
+}
+
+/*price*/
+.price{
+  background-color: #efefef;
+}
+.price__inner{
+
+}
+.inner{
+
+}
+.price__head {
+
+}
+.section-title {
+
+}
+.price__content {
+display: flex;
+margin-top: 80px;
+}
+.price__image {
+  width: 454 / 1200 * 100%;
+
+}
+.price__table {
+  width: (172 + 268 + 268) / 1200 * 100%;
+  margin-left: auto;
+}
+.price__attention {
+  a {
+
+  }
+}
+.table {
+  border-collapse: collapse;
+  border: 1px solid #707070;
+  
+  th,
+  td {
+    border: 1px solid #707070;
+  }
+
+  th {
+
+  }
+
+  td {
+
+  }
+
+  strong {
+
+  }
+  span {
+
   }
 }
