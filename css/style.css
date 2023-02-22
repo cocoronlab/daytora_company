@@ -427,9 +427,14 @@ a {
 
 /**/
 .access__map {
-  margin-top: 80px auto 0;
+  margin: 80px auto 0;
   width: 800px;
   max-width: 100%;
+}
+@media (max-width: 767px) {
+  .access__map {
+    margin-top: 40px;
+  }
 }
 
 .iframe-wrap {
@@ -446,17 +451,54 @@ a {
 }
 
 .access__info {
-  margin-top: 16px 0 0;
+  margin: 16px auto 0;
+  width: 800px;
+  max-width: 100%;
 }
 
 .access__info-row {
   display: flex;
+  align-items: center;
+}
+.access__info-row:not(:first-child) {
+  margin-top: 8px;
 }
 .access__info-row dt {
   margin: 0;
   padding: 0;
+  font-weight: 700;
+  width: 104px;
 }
 .access__info-row dd {
   margin: 0;
   padding: 0;
+  width: calc(100% - 104px);
+}
+
+.access__button {
+  text-align: center;
+  margin-top: 30px;
+}
+.access__button a {
+  text-decoration: none;
+  display: inline-block;
+  width: 304px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  padding: 16px 12px;
+  border-radius: 8px;
+  background-color: #3F51B5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+.access__button a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 16px;
+  background: url(../img/button-arrow.svg) no-repeat center center/contain;
 }
