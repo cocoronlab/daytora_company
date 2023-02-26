@@ -379,9 +379,7 @@ a {
 }
 
 /*フォーム*/
-.contact
-.contact__inner
-.contact__head
+
 .contact__form {
   margin: 80px auto 0;
   width: 800px;
@@ -389,8 +387,7 @@ a {
   background: #fff;
   padding: 60px;
 }
-.contact-form
-.contact-form__dl
+
 .contact__form__row {
   display: flex;
 
@@ -483,15 +480,7 @@ a {
     resize: none;
   }
 }
-.contact__form__row
-.contact-form__label
-.contact-form__input
-.contact__form__row
-.contact-form__label
-.contact-form__input
-.contact__form__row
-.contact-form__label
-.contact-form__input
+
 .contact-form__radio {
   margin-top: 32px;
 
@@ -553,3 +542,26 @@ a {
   margin-top: 30px;
   text-align: center;
 }
+
+
+ /*footer*/
+ .footer {
+  background: linear-gradient(to bottom, #666, #333);
+  padding: 60px 0 24px;
+  color: #fff;
+ }
+.footer__inner
+.footer__content
+.footer__left
+.footer__logo
+.footer__address
+.footer__tel
+.footer__center
+.footer__nav
+.Card
+.News
+.Price
+.Access
+.Contact
+.footer__right
+.footer__sns
