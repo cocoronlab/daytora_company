@@ -424,14 +424,78 @@ a {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #707070;
+  padding: 10px 16px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  background: #fff url(../img/select-arrow.png) no-repeat right 12px center/17px 14px;
 }
+.contact-form__input textarea {
+  height: 240px;
+  box-shadow: none;
+  border: 1px solid #707070;
+  background: fff;
+  padding: 10px 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  resize: none;
+}
+
 .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio {
   margin-top: 32px;
+}
+.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio [type=radio] {
+  display: none;
+}
+.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio span {
+  display: inline-block;
+  padding-left: 26px;
+  position: relative;
+  margin-right: 36px;
+}
+.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio span::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 50%;
+}
+.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio span::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #3F51B5;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio [type=radio]:checked + span::after {
+  display: block;
 }
 
 .contact-form__check {
   margin-top: 63px;
   text-align: center;
+}
+.contact-form__check [type=checkbox] {
+  display: none;
 }
 
 .contact-form__button {
