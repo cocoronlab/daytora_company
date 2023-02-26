@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -348,7 +349,7 @@ a {
 }
 
 /*フォーム*/
-.contact .contact__inner .contact__head .contact__form {
+.contact__form {
   margin: 80px auto 0;
   width: 800px;
   max-width: 100%;
@@ -356,10 +357,10 @@ a {
   padding: 60px;
 }
 
-.contact-form .contact-form__dl .contact__form__row {
+.contact__form__row {
   display: flex;
 }
-.contact-form .contact-form__dl .contact__form__row:not(:first-child) {
+.contact__form__row:not(:first-child) {
   margin-top: 60px;
 }
 
@@ -451,19 +452,19 @@ a {
   resize: none;
 }
 
-.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio {
+.contact-form__radio {
   margin-top: 32px;
 }
-.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio [type=radio] {
+.contact-form__radio [type=radio] {
   display: none;
 }
-.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio span {
+.contact-form__radio span {
   display: inline-block;
   padding-left: 26px;
   position: relative;
   margin-right: 36px;
 }
-.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio span::before {
+.contact-form__radio span::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -475,7 +476,7 @@ a {
   background: #fff;
   border-radius: 50%;
 }
-.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio span::after {
+.contact-form__radio span::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -486,7 +487,7 @@ a {
   transform: translateY(-50%);
   border-radius: 50%;
 }
-.contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact__form__row .contact-form__label .contact-form__input .contact-form__radio [type=radio]:checked + span::after {
+.contact-form__radio [type=radio]:checked + span::after {
   display: block;
 }
 
@@ -502,4 +503,127 @@ a {
   text-align: center;
 }
 
-/**/
+/*footer*/
+.footer {
+  background: linear-gradient(to bottom, #666, #333);
+  padding: 60px 0 24px;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 14px;
+  }
+}
+
+.footer__content {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .footer__content {
+    width: 100%;
+  }
+}
+
+.footer__left {
+  width: 36%;
+}
+
+.footer__logo {
+  width: 205px;
+}
+
+.footer__address,
+.footer__tel {
+  font-size: 14px;
+}
+
+.footer__address {
+  margin-top: 13px;
+}
+@media (max-width: 767px) {
+  .footer__address {
+    margin-top: 13px;
+  }
+}
+
+.footer__tel {
+  margin-top: 10px;
+}
+
+.footer__center {
+  width: 48%;
+}
+@media (max-width: 767px) {
+  .footer__center {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.footer__nav {
+  display: flex;
+}
+.footer__nav li:not(:first-child) {
+  margin-left: 40px;
+}
+@media (max-width: 767px) {
+  .footer__nav li:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+.footer__nav li a {
+  text-decoration: none;
+}
+
+.footer__right {
+  width: 16%;
+}
+@media (max-width: 767px) {
+  .footer__right {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.footer__sns {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .footer__sns {
+    justify-content: center;
+  }
+}
+.footer__sns li:not(:first-child) {
+  margin-left: 40px;
+}
+.footer__sns li a {
+  text-decoration: none;
+}
+.footer__sns li img {
+  width: 30px;
+}
+
+.footer__copy {
+  margin-top: 46px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+}
+.to-top a {
+  justify-content: none;
+}
+.to-top a img {
+  width: 60px;
+}
+@media (max-width: 767px) {
+  .to-top a img {
+    width: 40px;
+  }
+}

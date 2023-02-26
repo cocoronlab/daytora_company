@@ -1,8 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+
 $color-main: #3F51B5;
 $color-accent: #E81919;
 $color-text: #333333;
 
 $layout-width-inner: 1200px;
+
+$font-en: font-family: 'Lato', sans-serif;
+$font-ja:font-family: 'Noto Sans JP', sans-serif;
+
 
 $breakpoints: (
 //キー : 値
@@ -30,7 +38,7 @@ body {
 }
 
 body {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: $font-ja;
   font-size: 16px;
   line-height: 1.6;
   background: #fff;
@@ -71,6 +79,7 @@ h6 {
   text-align: center;
   padding-bottom: 28px;
   position: relative;
+  font-family: $font-en;
 
   &::after {
     content: "";
@@ -122,6 +131,7 @@ a {
   display: flex;
   align-items: center;
   margin-left: auto;
+  font-family: $font-en;
 
   li {
     &:not(:first-child) {
@@ -312,6 +322,7 @@ a {
 .news__date {
   width: 105px;
   padding-top: 3px;
+  font-family: $font-en;
 }
 .news__label {
   a {
@@ -357,6 +368,7 @@ a {
   margin-top: 60px;
   text-align: center;
   padding-top: 30px;
+  font-family: $font-en;
 
   a{
     text-decoration: none;
@@ -534,9 +546,6 @@ a {
     display: none;
   }
 
-  span {
-    
-  }
 }
 .contact-form__button {
   margin-top: 30px;
@@ -549,19 +558,120 @@ a {
   background: linear-gradient(to bottom, #666, #333);
   padding: 60px 0 24px;
   color: #fff;
+
+  @include mq('sp') {
+    padding-top: 30px;
+    padding-bottom: 14px;
+  }
  }
-.footer__inner
-.footer__content
-.footer__left
-.footer__logo
-.footer__address
-.footer__tel
-.footer__center
-.footer__nav
-.Card
-.News
-.Price
-.Access
-.Contact
-.footer__right
-.footer__sns
+.footer__content {
+  display: flex;
+
+  @include mq('sp') {
+    width: 100%;
+  }
+}
+.footer__left{
+  width: 36%;
+}
+.footer__logo {
+  width: 205px;
+}
+.footer__address,
+.footer__tel {
+  font-size: 14px;
+}
+.footer__address {
+margin-top: 13px;
+
+@include mq('sp') {
+  margin-top: 13px;
+}
+}
+.footer__tel {
+margin-top: 10px;
+
+
+}
+.footer__center {
+  width: 48%;
+
+  @include mq('sp') {
+    width: 100%;
+    margin-top: 24px;
+    
+  }
+}
+.footer__nav {
+display: flex;
+font-family: $font-en;
+
+li {
+  &:not(:first-child) {
+margin-left: 40px;
+
+@include mq('sp') {
+  margin-left: 20px;
+}
+  }
+
+  a {
+text-decoration: none;
+  }
+}
+}
+.footer__right {
+  width: 16%;
+
+  @include mq('sp') {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+.footer__sns {
+display: flex;
+justify-content: flex-end;
+
+@include mq('sp') {
+  justify-content: center;
+ }
+
+li {
+  &:not(:first-child) {
+margin-left: 40px;
+  }
+  a {
+    text-decoration: none;
+      }
+
+  img {
+    width: 30px;
+  }
+    }
+}
+
+.footer__copy {
+  margin-top: 46px;
+  font-size: 14px;
+  text-align: center;
+  font-family: $font-en;
+}
+
+.to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  a {
+    justify-content: none;
+
+    img {
+      width: 60px;
+
+      @include mq('sp') {
+        width: 40px;
+       }
+
+    }
+  }
+}
