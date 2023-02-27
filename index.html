@@ -1,380 +1,320 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>デイトラ練習</title>
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>フッターのコーディング</title>
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="css/base.css">
+
 </head>
+
 <body>
-  <header class="header">
-    <div class="header__inner inner">
-      <h1 class="header__logo"><a href="/"><img src="img/logo.png" alt=""></a></h1>
-      <ul class="header__nav">
-        <li><a href="" class="is-active">Card</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="">Price</a></li>
-        <li><a href="">Access</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
-  </header>
 
-  <div class="main-visual">
-    <div class="main-visual__content">
-      <div class="main-visual__title">一番伝えたいことを書く</div>
-      <div class="main-visual__lead">リードリードリード</div>
-      <div class="main-visual__button"><a href="">お問い合わせ</a></div>
-    </div>
-  </div>
+	<header class="header">
+		<div class="inner header__inner">
+			<h1 class="header__logo"><a href=""><img src="img/logo.png" alt="The Company"></a></h1><!-- /.header__logo -->
+			<nav class="header__nav">
+				<ul>
+					<li><a href="" class="is-active">Card</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">Price</a></li>
+					<li><a href="">Access</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav><!-- /.header__nav -->
+		</div><!-- /.header__inner -->
+	</header><!-- /.header -->
 
-  <section class="card">
-    <div class="card__inner inner">
-      <div class="card__head section-title">Card</div>
-      <div class="card__items">
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-    </div>
-  </section>
+	<div class="mainvisual">
+		<div class="mainvisual__content">
+			<div class="mainvisual__title">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く</div><!-- /.mainvisual__title -->
+			<div class="mainvisual__lead">リードリードリード</div><!-- /.mainvisual__lead -->
+			<div class="mainvisual__button"><a class="button-mainvisual" href="">お問い合わせ</a></div><!-- /.mainvisual__button -->
+		</div><!-- /.mainvisual__content -->
+	</div><!-- /.mainvisual -->
 
-  <section class="news">
-    <div class="news__inner inner">
-      <div class="news__head section-title">News</div>
-      <div class="news__items">
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="">ラベル１</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="" class="is-blue">ラベル2</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="" class="is-red">ラベル3</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="">ラベル１</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="">ラベル１</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-      </div>
+	<section id="" class="card section">
+		<div class="card__inner inner">
+			<h2 class="section-title">Card</h2><!-- /.section-title -->
+			<div class="card__items">
+				<div class="card__item">
+					<a class="media" href="">
+						<div class="media__img"><img src="img/card01.png" alt=""></div><!-- /.media__img -->
+						<div class="media__body">
+							<div class="media__title">タイトルタイトル</div><!-- /.media__title -->
+							<div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div><!-- /.media__content -->
+						</div><!-- /.media__body -->
+					</a><!-- /.media -->
+				</div><!-- /.card__item -->
+				<div class="card__item">
+					<a class="media" href="">
+						<div class="media__img"><img src="img/card02.png" alt=""></div><!-- /.media__img -->
+						<div class="media__body">
+							<div class="media__title">タイトルタイトル</div><!-- /.media__title -->
+							<div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div><!-- /.media__content -->
+						</div><!-- /.media__body -->
+					</a><!-- /.media -->
+				</div><!-- /.card__item -->
+				<div class="card__item">
+					<a class="media" href="">
+						<div class="media__img"><img src="img/card03.png" alt=""></div><!-- /.media__img -->
+						<div class="media__body">
+							<div class="media__title">タイトルタイトル</div><!-- /.media__title -->
+							<div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div><!-- /.media__content -->
+						</div><!-- /.media__body -->
+					</a><!-- /.media -->
+				</div><!-- /.card__item -->
+				<div class="card__item">
+					<a class="media" href="">
+						<div class="media__img"><img src="img/card04.png" alt=""></div><!-- /.media__img -->
+						<div class="media__body">
+							<div class="media__title">タイトルタイトル</div><!-- /.media__title -->
+							<div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div><!-- /.media__content -->
+						</div><!-- /.media__body -->
+					</a><!-- /.media -->
+				</div><!-- /.card__item -->
+				<div class="card__item">
+					<a class="media" href="">
+						<div class="media__img"><img src="img/card05.png" alt=""></div><!-- /.media__img -->
+						<div class="media__body">
+							<div class="media__title">タイトルタイトル</div><!-- /.media__title -->
+							<div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div><!-- /.media__content -->
+						</div><!-- /.media__body -->
+					</a><!-- /.media -->
+				</div><!-- /.card__item -->
+				<div class="card__item">
+					<a class="media" href="">
+						<div class="media__img"><img src="img/card06.png" alt=""></div><!-- /.media__img -->
+						<div class="media__body">
+							<div class="media__title">タイトルタイトル</div><!-- /.media__title -->
+							<div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div><!-- /.media__content -->
+						</div><!-- /.media__body -->
+					</a><!-- /.media -->
+				</div><!-- /.card__item -->
+			</div><!-- /.card__items -->
+		</div><!-- /.card__inner -->
+	</section><!-- /.card -->
 
-      <div class="news__more"><a href="">more</a></div>
-    </div>
-  </section>
+	<section id="" class="news section">
+		<div class="news__inner inner">
+			<h2 class="section-title">News</h2><!-- /.section-title -->
+			<div class="news__items">
+				<div class="news__item">
+					<div class="info">
+						<div class="info__meta">
+							<time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+							<div class="info__label"><a href="">ラベル１</a></div><!-- /.info__label -->
+						</div><!-- /.info__meta -->
+						<div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+					</div><!-- /.info -->
+				</div><!-- /.news__item -->
+				<div class="news__item">
+					<div class="info">
+						<div class="info__meta">
+							<time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+							<div class="info__label info__label--type01"><a href="">ラベル２</a></div><!-- /.info__label -->
+						</div><!-- /.info__meta -->
+						<div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+					</div><!-- /.info -->
+				</div><!-- /.news__item -->
+				<div class="news__item">
+					<div class="info">
+						<div class="info__meta">
+							<time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+							<div class="info__label info__label--type02"><a href="">ラベル３</a></div><!-- /.info__label -->
+						</div><!-- /.info__meta -->
+						<div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+					</div><!-- /.info -->
+				</div><!-- /.news__item -->
+				<div class="news__item">
+					<div class="info">
+						<div class="info__meta">
+							<time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+							<div class="info__label"><a href="">ラベル１</a></div><!-- /.info__label -->
+						</div><!-- /.info__meta -->
+						<div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+					</div><!-- /.info -->
+				</div><!-- /.news__item -->
+				<div class="news__item">
+					<div class="info">
+						<div class="info__meta">
+							<time class="info__published" datetime="2019-01-30">2019-01-30</time><!-- /.info__published -->
+							<div class="info__label"><a href="">ラベル１</a></div><!-- /.info__label -->
+						</div><!-- /.info__meta -->
+						<div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+					</div><!-- /.info -->
+				</div><!-- /.news__item -->
+			</div><!-- /.news__items -->
+			<div class="news__link"><a href="">more</a></div><!-- /.news__link -->
+		</div><!-- /.news__inner -->
+	</section><!-- /.news -->
 
-  <section class="contact section">
-    <div class="contact__inner inner">
-      <div class="contact__head section-title">Contact</div>
-        <div class="contact__form">
-          <form action="" class="contact-form">
-            <dl class="contact-form__dl">
-              <div class="contact__form__row">
-                <dt class="contact-form__label"><label for="your-name is-required">お名前</label></dt>
-                <dd class="contact-form__input"><input id="your-name" type="text" placeholder="山田　太郎"></dd>
-              </div>
-              <div class="contact__form__row">
-                <div class="contact-form__label"><label for="your-email">メールアドレス</label></div>
-                <div class="contact-form__input"><input id="your-email" type="email" placeholder="text@example.com"></div>
-              </div>
-              <div class="contact__form__row">
-                <div class="contact-form__label"><label for="your-kind">お問い合わせ種別</label></div>
-                <div class="contact-form__input">
-                  <select name="" id="your-kind">
-                    <option value="">セレクト1</option>
-                    <option value="">セレクト2</option>
-                    <option value="">セレクト3</option>
-                  </select>
-                </div>
-              </div>
-              <!-- <div class="contact__form__row">
-                <div class="contact-form__label"><label for="your-message">お問い合わせ内容</label></div>
-                <div class="contact-form__input"><textarea id="your-message" cols="30" rows="10" type="email" placeholder="お問い合わせを入力してください"></div>
-              </div> -->
-              <div class="contact-form__radio">
-                <label><input type="radio" name="your-radio" checked><span>らじお1</span></label>
-                <label><input type="radio" name="your-radio"><span>らじお2</span></label>
-                <label><input type="radio" name="your-radio"><span>らじお3</span></label>
-              </div>
-              <div class="contact-form__check">
-                <label><input type="checkbox"><span><a>プライバシーポリシー</a>に同意する</span></label>
-              </div>
-              <div class="contact-form__button">
-                <input type="submit" value="送信する">
-              </div>
-            </dl>
-          </form>
-        </div>
-    </div>
-  </section>
+	<section id="" class="table section">
+		<div class="table__inner inner">
+			<h2 class="section-title">Price</h2><!-- /.section-title -->
+			<div class="table__content">
+				<div class="table__image"><img src="img/price.png" alt=""></div><!-- /.table__image -->
+				<div class="table__price">
+					<table class="table-default">
+						<tr>
+							<th></th>
+							<th>column1</th>
+							<th>column2</th>
+						</tr>
+						<tr>
+							<th>row1</th>
+							<td>100円</td>
+							<td>100円</td>
+						</tr>
+						<tr>
+							<th>row2</th>
+							<td>6,000円</td>
+							<td>0円</td>
+						</tr>
+						<tr>
+							<th>row3</th>
+							<td class="table-default__multiline">
+								<span class="m-active">6,000円</span><br>
+								<span class="m-small">※ 今だけ半額</span>
+							</td>
+							<td>0円</td>
+						</tr>
+						<tr>
+							<th>row4</th>
+							<td>100円</td>
+							<td>100円</td>
+						</tr>
+					</table>
+					<div class="table__attention">※目安なので詳しくは<a href="">お問い合わせ</a>ください。</div><!-- /.table__attention -->
+				</div><!-- /.table__price -->
+			</div><!-- /.table__content -->
+		</div><!-- /.table__inner -->
+	</section><!-- /.table -->
 
-  <footer>
-    <div class="footer__inner inner">
-      <div class="footer__content">
-        <div class="footer__left">
-          <div class="footer__logo"><a href=""><img src="img/logo.png" alt=""></a></div>
-          <div class="footer__address">住所：ほげほげのほげほげ</div>
-          <div class="footer__tel">TEL：0000-00-0000</div>
-        </div>
-        <div class="footer__center">
-          <ul class="footer__nav">
-            <li><a href="">Card</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Price</a></li>
-            <li><a href="">Access</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__right">
-          <ul class="footer__sns">
-            <li><a href=""><img src="img/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="img/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="img/instagram.png" alt=""></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__copy">Copyright © 2020 デイトラ All rights reserved.</div>
-    </div>
-  </footer>
+	<section id="" class="map section">
+		<div class="map__inner inner">
+			<h2 class="section-title">Access</h2><!-- /.section-title -->
+			<div class="map__iframe">
+				<div class="map__iframe-wrap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4997392640716!2d139.7130952152525!3d35.664695080198115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1586440468326!5m2!1sja!2sjp" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div><!-- /.map__iframe-wrap -->
+			</div><!-- /.map__iframe -->
+			<dl class="map__info">
+				<dt>住所</dt>
+				<dd>ほげほげほげのほげの場所</dd>
+				<dt>アクセス</dt>
+				<dd>〇〇駅から右に５分</dd>
+			</dl><!-- /.map__info -->
+			<div class="map__link"><a class="button-arrow-right" href="https://goo.gl/maps/MCQpp5XWKNfGT7Vt5" target="_blank">Googleマップで見る</a></div><!-- /.map__link -->
+		</div><!-- /.map__inner -->
+	</section><!-- /.map -->
 
-  <div class="to-top"><a href=""><img src="img/totop.png" alt=""></a></div>
+
+	<section id="" class="contact section">
+		<div class="contact__inner inner">
+			<h2 class="section-title">Contact</h2><!-- /.section-title -->
+			<div class="contact__item">
+				<form action="#">
+					<dl class="contact__controls">
+						<div class="contact__control">
+							<dt>
+								<label class="contact__label contact__label--required" for="your-name">お名前</label>
+							</dt>
+							<dd>
+								<input id="your-name" class="form-input" type="text" name="your-name" value="" placeholder="山田　太郎" required>
+							</dd>
+						</div><!-- /.contact__control -->
+						<div class="contact__control">
+							<dt>
+								<label class="contact__label contact__label--required" for="your-mail">メールアドレス</label>
+							</dt>
+							<dd>
+								<input id="your-mail" class="form-input" type="email" name="your-mail" value="" placeholder="text@example.com" required>
+							</dd>
+						</div><!-- /.contact__control -->
+						<div class="contact__control">
+							<dt>
+								<label class="contact__label" for="your-kind">お問い合わせ種別</label>
+							</dt>
+							<dd>
+								<select id="your-kind" class="form-select">
+									<option value="">ーーー</option>
+									<option value="a">セレクトA</option>
+									<option value="b">セレクトB</option>
+									<option value="c">セレクトC</option>
+								</select>
+							</dd>
+						</div><!-- /.contact__control -->
+						<div class="contact__control">
+							<dt>
+								<label class="contact__label" for="your-message">お問い合わせ内容</label>
+							</dt>
+							<dd>
+								<textarea id="your-message" class="form-textarea" name="your-message" placeholder="お問い合わせを入力してください"></textarea>
+							</dd>
+						</div><!-- /.contact__control -->
+					</dl><!-- /.contact__controls -->
+					<div class="contact__radio">
+						<label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio" checked><span>ラジオ１</span></label>
+						<label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ２</span></label>
+						<label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ３</span></label>
+					</div><!-- /.contact__radio -->
+					<div class="contact__check">
+						<label>
+							<input class="form-checkbox" type="checkbox" name="your-checkbox" required>
+
+							<span><a href="">プライバシーポリシー</a>に合意する</span>
+
+						</label>
+					</div><!-- /.contact__check -->
+					<div class="contact__submit"><input class="button-arrow-right" type="submit" value="送信する"></div><!-- /.contact__submit -->
+				</form>
+			</div><!-- /.contact__item -->
+
+		</div><!-- /.contact__inner -->
+	</section><!-- /.contact -->
+
+	<footer class="footer">
+		<div class="footer__inner inner">
+			<div class="footer__contents">
+				<div class="footer__left">
+					<div class="footer__logo"><a href=""><img src="img/logo.png" alt="The Company"></a></div><!-- /.footer__logo -->
+					<div class="footer__info">
+						<p>住所：ほげほげのほげほげ</p>
+						<p>TEL：0000-00-0000</p>
+					</div><!-- /.footer__info -->
+				</div><!-- /.footer__left -->
+				<div class="footer__center">
+					<nav class="footer__nav">
+						<ul>
+							<li><a href="">Card</a></li>
+							<li><a href="">News</a></li>
+							<li><a href="">Price</a></li>
+							<li><a href="">Access</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav><!-- /.footer__nav -->
+				</div><!-- /.footer__center -->
+				<div class="footer__right">
+					<div class="footer_sns">
+						<ul>
+							<li><a href="" target="_blank"><img src="img/icon-twitter.png" alt=""></a></li>
+							<li><a href="" target="_blank"><img src="img/icon-facebook.png" alt=""></a></li>
+							<li><a href="" target="_blank"><img src="img/icon-instagram.png" alt=""></a></li>
+						</ul><!-- /.footer_sns -->
+					</div><!-- /.footer_sns -->
+				</div><!-- /.footer__right -->
+			</div><!-- /.footer__contents -->
+			<div class="footer__copy">Copyright &copy; 2020 <a href="https://www.daily-trial.com/" target="_blank">デイトラ</a> All rights reserved.</div><!-- /.footer__copy -->
+		</div><!-- /.footer__inner -->
+	</footer><!-- /.footer -->
+
+	<div class="totop"><a href="#"><img src="img/totop.png" alt="上部へスクロール"></a></div><!-- /.totop -->
+
 </body>
-</html>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>デイトラ練習</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header__inner inner">
-      <h1 class="header__logo"><a href="/"><img src="img/logo.png" alt=""></a></h1>
-      <ul class="header__nav">
-        <li><a href="" class="is-active">Card</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="">Price</a></li>
-        <li><a href="">Access</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
-  </header>
 
-  <div class="main-visual">
-    <div class="main-visual__content">
-      <div class="main-visual__title">一番伝えたいことを書く</div>
-      <div class="main-visual__lead">リードリードリード</div>
-      <div class="main-visual__button"><a href="">お問い合わせ</a></div>
-    </div>
-  </div>
-
-  <section class="card">
-    <div class="card__inner inner">
-      <div class="card__head section-title">Card</div>
-      <div class="card__items">
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-        <div class="card__item">
-          <div class="card__img"><img src="img/card-img.svg" alt=""></div>
-          <div class="card__title">タイトルタイトル</div>
-          <div class="card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
-        </div>
-    </div>
-  </section>
-
-  <section class="news">
-    <div class="news__inner inner">
-      <div class="news__head section-title">News</div>
-      <div class="news__items">
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="">ラベル１</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="" class="is-blue">ラベル2</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="" class="is-red">ラベル3</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="">ラベル１</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-        <div class="news__item">
-          <div class="news__meta">
-            <div class="news__date">2019-01-30</div>
-            <div class="news__label"><a href="">ラベル１</a></div>
-          </div>
-          <div class="news__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
-        </div>
-      </div>
-
-      <div class="news__more"><a href="">more</a></div>
-    </div>
-  </section>
-
-  <section class="contact section">
-    <div class="contact__inner inner">
-      <div class="contact__head section-title">Contact</div>
-        <div class="contact__form">
-          <form action="" class="contact-form">
-            <dl class="contact-form__dl">
-              <div class="contact__form__row">
-                <dt class="contact-form__label"><label for="your-name is-required">お名前</label></dt>
-                <dd class="contact-form__input"><input id="your-name" type="text" placeholder="山田　太郎"></dd>
-              </div>
-              <div class="contact__form__row">
-                <div class="contact-form__label"><label for="your-email">メールアドレス</label></div>
-                <div class="contact-form__input"><input id="your-email" type="email" placeholder="text@example.com"></div>
-              </div>
-              <div class="contact__form__row">
-                <div class="contact-form__label"><label for="your-kind">お問い合わせ種別</label></div>
-                <div class="contact-form__input">
-                  <select name="" id="your-kind">
-                    <option value="">セレクト1</option>
-                    <option value="">セレクト2</option>
-                    <option value="">セレクト3</option>
-                  </select>
-                </div>
-              </div>
-              <!-- <div class="contact__form__row">
-                <div class="contact-form__label"><label for="your-message">お問い合わせ内容</label></div>
-                <div class="contact-form__input"><textarea id="your-message" cols="30" rows="10" type="email" placeholder="お問い合わせを入力してください"></div>
-              </div> -->
-              <div class="contact-form__radio">
-                <label><input type="radio" name="your-radio" checked><span>らじお1</span></label>
-                <label><input type="radio" name="your-radio"><span>らじお2</span></label>
-                <label><input type="radio" name="your-radio"><span>らじお3</span></label>
-              </div>
-              <div class="contact-form__check">
-                <label><input type="checkbox"><span><a>プライバシーポリシー</a>に同意する</span></label>
-              </div>
-              <div class="contact-form__button">
-                <input type="submit" value="送信する">
-              </div>
-            </dl>
-          </form>
-        </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer__inner inner">
-      <div class="footer__content">
-        <div class="footer__left">
-          <div class="footer__logo"><a href=""><img src="img/logo.png" alt=""></a></div>
-          <div class="footer__address">住所：ほげほげのほげほげ</div>
-          <div class="footer__tel">TEL：0000-00-0000</div>
-        </div>
-        <div class="footer__center">
-          <ul class="footer__nav">
-            <li><a href="">Card</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Price</a></li>
-            <li><a href="">Access</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__right">
-          <ul class="footer__sns">
-            <li><a href=""><img src="img/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="img/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="img/instagram.png" alt=""></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__copy">Copyright © 2020 デイトラ All rights reserved.</div>
-    </div>
-  </footer>
-
-  <div class="to-top"><a href=""><img src="img/totop.png" alt=""></a></div>
-</body>
 </html>
