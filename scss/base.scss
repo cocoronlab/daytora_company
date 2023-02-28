@@ -999,3 +999,14 @@ h6 {
 		}
 	}
 }
+
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  background: transparent url(../img/arrow-next.png) no-repeat center center / contain;
+
+	&::after {
+		display: none;
+	}
+}

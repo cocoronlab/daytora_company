@@ -989,3 +989,14 @@ img {
   height: 11px;
   background: url(../img/news-arrow.svg) no-repeat center center/contain;
 }
+
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  background: transparent url(../img/arrow-next.png) no-repeat center center / contain;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
